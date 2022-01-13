@@ -364,7 +364,7 @@ svg {
   overflow: hidden;
 }
 .main-wrapper {
-  background: url(../img/main-back.png) top right no-repeat;
+  background: url(../img/main-back.avif) top right no-repeat;
   padding-top: 63px;
   padding-bottom: 50px;
   position: relative;
@@ -971,7 +971,7 @@ svg {
   position: relative;
   padding-top: 64px;
   padding-bottom: 47px;
-  background: url(../img/faq.png) 100% 10px no-repeat;
+  background: url(../img/faq.avif) 100% 10px no-repeat;
 }
 .faq-wrapper::after {
   position: absolute;
