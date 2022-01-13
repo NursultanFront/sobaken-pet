@@ -208,6 +208,14 @@ svg {
 .header-socials i {
   color: #70737c;
 }
+
+.header-icons {
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .header-icons__link {
   position: relative;
   width: 45px;
@@ -218,6 +226,10 @@ svg {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 100%;
+}
+
+.header-icons__link + .header-icons__link {
+  margin-left: 10px;
 }
 .header-icons__pic {
   position: absolute;
