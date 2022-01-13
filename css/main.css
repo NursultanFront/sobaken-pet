@@ -364,7 +364,7 @@ svg {
   overflow: hidden;
 }
 .main-wrapper {
-  background: url(../img/main-back.png) top right no-repeat;
+  background: url(../img/main-back.webp) top right no-repeat;
   padding-top: 63px;
   padding-bottom: 50px;
   position: relative;
@@ -738,14 +738,14 @@ svg {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  content: url(../img/heartpng.png);
+  content: url(../img/heartpng.avif);
   cursor: pointer;
 }
 .product-item__number {
   display: inline-block;
 }
 .product-item__favourite.product-item__favourite--pressed.product-item__favourite::after {
-  content: url(../img/heartGreen.png);
+  content: url(../img/heartGreen.avif);
 }
 .shelter {
   overflow: hidden;
@@ -929,7 +929,7 @@ svg {
 }
 .news-item__author::before {
   position: absolute;
-  content: url(../img/author.png);
+  content: url(../img/author.avif);
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -971,7 +971,7 @@ svg {
   position: relative;
   padding-top: 64px;
   padding-bottom: 47px;
-  background: url(../img/faq.png) 100% 10px no-repeat;
+  background: url(../img/faq.webp) 100% 10px no-repeat;
 }
 .faq-wrapper::after {
   position: absolute;
@@ -1240,7 +1240,7 @@ svg {
 }
 .reviews-content__author .star::before {
   position: absolute;
-  content: url(../img/bigStar.png);
+  content: url(../img/bigStar.avif);
   top: 2px;
   left: 0;
 }
