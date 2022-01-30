@@ -12316,6 +12316,13 @@ span,
 svg {
   display: inline-block;
 }
+.site_title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 45px;
+  letter-spacing: -0.04em;
+  color: #1f2533;
+}
 .header {
   -webkit-box-shadow: 0 4px 25px rgba(217, 217, 217, 0.25);
   box-shadow: 0 4px 25px rgba(217, 217, 217, 0.25);
@@ -12680,13 +12687,6 @@ svg {
 .product-box__icon .icon-dog::before {
   color: #46bf8c;
 }
-.product-box__title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 45px;
-  letter-spacing: -0.04em;
-  color: #1d1c2d;
-}
 .product-box__btn {
   margin-left: auto;
   padding: 18px 34px;
@@ -12767,6 +12767,7 @@ svg {
 }
 .product-item__link {
   position: relative;
+  width: 100%;
 }
 .product-item__top {
   position: absolute;
@@ -12804,12 +12805,16 @@ svg {
   z-index: -5;
 }
 .product-item__img {
+  width: 100%;
   margin-bottom: 8px;
   text-align: center;
 }
-.product-item__img img {
-  width: 307px;
-  height: 307px;
+.product-item__img img,
+.product-item__img picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .product-item__stars {
   margin-bottom: 8px;
@@ -12907,16 +12912,14 @@ svg {
 }
 .product-item__favourite::after {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   content: url(../img/main-page/heartpng.png);
   cursor: pointer;
 }
 .product-item__number {
   display: inline-block;
+}
+.product-item__buttons {
+  position: relative;
 }
 .product-item__favourite.product-item__favourite--pressed.product-item__favourite::after {
   content: url(../img/main-page/heartGreen.png);
@@ -12955,11 +12958,6 @@ svg {
 }
 .shelter-content__title {
   margin-bottom: 16px;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 45px;
-  letter-spacing: -0.04em;
-  color: #1f2533;
 }
 .shelter-content__text {
   font-family: Inter, sans-serif;
@@ -13103,7 +13101,7 @@ svg {
 }
 .news-item__author::before {
   position: absolute;
-  content: url(../img/main-page/author.avif);
+  content: url(../img/main-page/author.png);
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -13145,7 +13143,7 @@ svg {
   position: relative;
   padding-top: 64px;
   padding-bottom: 47px;
-  background: url(../img/main-page/faq.png) 100% 10px no-repeat;
+  background: url(../img/main-page/faq.avif) 100% 10px no-repeat;
 }
 .faq-wrapper::after {
   position: absolute;
@@ -13159,15 +13157,9 @@ svg {
   filter: blur(198px);
   z-index: -1;
 }
-.faq__title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 45px;
-  letter-spacing: -0.04em;
-  color: #1d1c2d;
-}
 .faq__image {
   display: none;
+  margin-top: 25px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -13205,13 +13197,6 @@ svg {
 }
 .reviews-info {
   width: 350px;
-}
-.reviews-info__title {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 45px;
-  letter-spacing: -0.04em;
-  color: #1f2533;
 }
 .reviews-info__text {
   font-size: 18px;
@@ -13318,11 +13303,6 @@ svg {
 }
 .ident-content__title {
   margin-bottom: 16px;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 45px;
-  letter-spacing: -0.04em;
-  color: #1f2533;
 }
 .ident-content__text {
   margin-bottom: 52px;
@@ -13866,6 +13846,10 @@ svg {
   }
 }
 @media (max-width: 768px) {
+  .site_title {
+    font-size: 22px;
+    line-height: 31px;
+  }
   .container-slide {
     padding-right: 0;
   }
@@ -13884,6 +13868,9 @@ svg {
   }
   .main-cards__item + .main-cards__item {
     margin-left: 0;
+  }
+  .product .container {
+    padding-right: 0;
   }
   .product-box__title {
     font-size: 25px;
@@ -13946,6 +13933,10 @@ svg {
   }
 }
 @media (max-width: 686px) {
+  .site_title {
+    font-size: 22px;
+    line-height: 31px;
+  }
   .news-item {
     position: initial;
     width: 311px;
@@ -14067,6 +14058,10 @@ svg {
   .nav {
     display: none;
   }
+  .reviews-content {
+    margin-left: 2px;
+    width: 300px;
+  }
 }
 @media (max-width: 392px) {
   .main-wrapper::before,
@@ -14089,6 +14084,7 @@ svg {
   }
   .product-item {
     width: 311px;
+    height: 526px;
   }
   .ident-content__btns {
     -webkit-box-orient: vertical;
